@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="./css/signUp.css" />
+  </head>
+  <body>
+    <div class="register-container">
+      <div class="register-box">
+        <h1 class="header">Create Account</h1>
+        <form action="" class="form-log">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name..." />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email..." />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password..."
+            />
+          </div>
+
+          <div class="form-group gender">
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+          </div>
+
+          <div class="form-group">
+            <label for="contact">Contact No</label>
+            <input
+              type="number"
+              id="contact"
+              placeholder="Enter your contact no..."
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone No</label>
+            <input type="tel" id="phone" placeholder="Enter your phone no..." />
+          </div>
+
+          <div class="form-group">
+            <label for="city">Choose a City</label>
+            <select id="city" name="city">
+              <option value="Taiz">Taiz</option>
+              <option value="Sana'a">Sana'a</option>
+              <option value="Marib">Marib</option>
+              <option value="Aden">Aden</option>
+              <option value="Haga">Haga</option>
+              <option value="Alohdida">Alohdida</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="birthday">Date of Birth</label>
+            <input type="date" id="birthday" />
+          </div>
+
+          <button type="submit" class="btn-submit">Sign Up</button>
+
+          <p class="login-notice">
+            Already have an account? <a href="./login.html">Login here</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
