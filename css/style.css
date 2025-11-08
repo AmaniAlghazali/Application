@@ -1,7 +1,35 @@
 /* ============================= */
+/* Scroll-to-top button */
+
+/* scroll-to-top button style */
+
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    color: #fff;
+    font-size: 28px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.6s ease;
+    z-index: 999;
+}
+
+.scroll-top:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #9013fe, #4a90e2);
+}
+
 /*        GLOBAL STYLES           */
 /* ============================= */
 body, html {
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     color: #555;
     margin: 0;
@@ -395,4 +423,35 @@ img {
     .pricing-two {
         padding: 20px;
     }
+}
+
+/* ******************************************* */
+@media (max-width: 768px) {
+    .info, .about, .personal, .final {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-item, .info-items {
+        width: 90%;
+    }
+
+    .map-container {
+        width: 90%;
+        height: 300px;
+    }
+
+    .submit-footer input[type="email"] {
+        width: 100%;
+    }
+}
+
+.footer {
+    padding: 50px 20px;
+}
+
+.btn-more:hover,
+button.nav-btn.btn:hover {
+    background-color: #50558a;
+    transition: background 0.3s ease;
 }
